@@ -4,68 +4,30 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Restaurant Apps</title>
+    <meta name="description" content="Menu restaurant" />
+    <meta name="theme-color" content="#fff" />
+    <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" href="favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&family=Quicksand:wght@500;700&display=swap"
       rel="stylesheet"
     />
+    <title>Kuliner Apps</title>
   </head>
   <body>
-    <a href="#content" class="skip-link">Skip to content ?</a>
+    <a href="#maincontent" class="skip-link">Skip to Content?</a>
     <header>
-      <nav>
-        <div class="logo-box" tabindex="0">
-          <button class="hamburger-menu" id="menu">
-            <i class="bx bx-menu bx-md"></i>
-          </button>
-          <img src="./images/logo.png" alt="logo" />
-          <h1>Kuliner Apps</h1>
-        </div>
-        <div class="nav-menu">
-          <a href="#content">Home</a>
-          <a href="#">Favorite</a>
-          <a
-            target="_blank"
-            href="https://www.linkedin.com/in/raissa-atha-febrianti-2b4bb5221"
-            >About Us</a
-          >
-        </div>
-      </nav>
-
-      <section id="nav-mobile" class="menus">
-        <div class="dropdown-menu">
-          <a href="/">Home</a>
-          <a href="#">Favorite</a>
-          <a
-            target="_blank"
-            href="https://www.linkedin.com/in/raissa-atha-febrianti-2b4bb5221"
-            >About Us</a
-          >
-        </div>
-      </section>
+      <app-bar></app-bar>
+      <title-resto></title-resto>
     </header>
-
-    <main>
-      <div class="hero" tabindex="0"></div>
-      <div class="explore">
-        <h1 tabindex="0">Explore Kuliner</h1>
-      </div>
-      <div class="search" tabindex="0">
-        <label for="searchInput">Search :</label>
-        <input
-          type="text"
-          id="searchInput"
-          placeholder="Search name or city..."
-        />
-      </div>
-
-      <div id="content" class="restaurantList" tabindex="0"></div>
-    </main>
-
+    <main id="maincontent" tabindex="0"></main>
     <footer tabindex="0">
-      <p>Copyright © 2023 - Kuliner Apps</p>
+      <div class="footer">
+        <p>&copy; Raissa Athatha Copyright © 2023 - Kuliner Apps</p>
+      </div>
     </footer>
   </body>
 </html>
