@@ -1,0 +1,61 @@
+@media only screen and (max-width: 499px) {
+  .nav-menu {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .explore {
+    margin-top: 2.5rem;
+  }
+
+  .search {
+    margin-top: 1.5rem;
+  }
+
+  .restaurantList {
+    padding: 1.5rem 2rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
+
+  .menus {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 650px) {
+  header {
+    padding: 0.8rem 2rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  header {
+    padding: 0.8rem 6rem;
+  }
+
+  .explore {
+    margin-top: 3rem;
+  }
+
+  .search {
+    margin-top: 2rem;
+  }
+
+  .restaurantList {
+    padding: 2rem 6rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .hero {
+    height: 100vh;
+  }
+}
