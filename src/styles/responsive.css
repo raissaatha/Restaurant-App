@@ -1,9 +1,3 @@
-@media only screen and (max-width: 499px) {
-  .nav-menu {
-    display: none;
-  }
-}
-
 @media only screen and (min-width: 500px) {
   .explore {
     margin-top: 2.5rem;
@@ -29,16 +23,45 @@
 }
 
 @media only screen and (min-width: 650px) {
-  header {
-    padding: 0.8rem 2rem;
+  .app-bar {
+    grid-template-columns: 1fr auto;
+    padding: 8px 32px;
   }
+ 
+  .app-bar .app-bar__brand h1 {
+    font-size: 1.5em;
+  }
+ 
+  .app-bar .app-bar__menu {
+    display: none;
+  }
+ 
+  .app-bar .app-bar__navigation {
+    position: static;
+    width: 100%;
+    background-color: transparent;
+  }
+ 
+  .app-bar .app-bar__navigation ul li {
+    display: inline-block;
+  }
+ 
+  .app-bar .app-bar__navigation ul li a {
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    margin: 0;
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  .hero {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../public/images/heros/hero-image_2-small.jpg);
+  }
+
 }
 
 @media only screen and (min-width: 900px) {
-  header {
-    padding: 0.8rem 6rem;
-  }
-
   .explore {
     margin-top: 3rem;
   }
@@ -51,6 +74,10 @@
     padding: 2rem 6rem;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
+  }
+
+  .hero {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../public/images/heros/hero-image_2-large.jpg);
   }
 }
 

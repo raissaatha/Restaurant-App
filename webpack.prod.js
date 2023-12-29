@@ -1,5 +1,5 @@
-const common = require('./webpack.common');
 const { merge } = require('webpack-merge');
+const common = require('./webpack.common');
 
 module.exports = merge(common, {
   mode: 'production',
@@ -17,6 +17,10 @@ module.exports = merge(common, {
             },
           },
         ],
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        type: 'asset/resource',
       },
     ],
   },
